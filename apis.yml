@@ -1,7 +1,12 @@
 aid: regeneron-pharmaceuticals
-url: https://raw.githubusercontent.com/api-evangelist/regeneron-pharmaceuticals/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/regeneron-pharmaceuticals/refs/heads/main/apis.yml
 modified: '2026-03-21'
 apis: []
 common:
   - type: Website
     url: https://www.regeneron-pharmaceuticals.com
+description: >-
+  Regeneron Pharmaceuticals is a leading biotechnology company that invents, develops,
+  and commercializes life-transforming medicines for people with serious diseases
+  in eye disease, cancer, inflammation, infectious disease, and rare diseases.
