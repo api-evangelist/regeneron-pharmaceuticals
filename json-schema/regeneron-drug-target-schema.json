@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-evangelist.github.io/regeneron-pharmaceuticals/json-schema/regeneron-drug-target-schema.json",
+  "title": "Drug Target",
+  "description": "A biological target for drug development identified through Regeneron's genetics and research programs",
+  "type": "object",
+  "required": ["targetId", "name", "targetType"],
+  "properties": {
+    "targetId": {
+      "type": "string",
+      "description": "Unique target identifier"
+    },
+    "name": {
+      "type": "string",
+      "description": "Target name (gene symbol or protein name)"
+    },
+    "targetType": {
+      "type": "string",
+      "enum": ["Protein", "Gene", "Pathway", "RNA"],
+      "description": "Type of biological target"
+    },
+    "geneSymbol": {
+      "type": "string",
+      "description": "HGNC approved gene symbol"
+    },
+    "uniprotId": {
+      "type": "string",
+      "description": "UniProt accession number for protein targets"
+    },
+    "biologicalFunction": {
+      "type": "string",
+      "description": "Description of the target's biological role"
+    },
+    "diseaseArea": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Disease areas the target is relevant to"
+    },
+    "modality": {
+      "type": "string",
+      "enum": ["Antibody", "Small Molecule", "Gene Therapy", "RNA Therapy", "Cell Therapy"],
+      "description": "Drug modality applicable to this target"
+    },
+    "geneticValidation": {
+      "type": "boolean",
+      "description": "Whether the target has been validated by human genetics evidence"
+    },
+    "rgcEvidence": {
+      "type": "boolean",
+      "description": "Whether evidence comes from the Regeneron Genetics Center exome database"
+    }
+  },
+  "additionalProperties": false
+}

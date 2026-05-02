@@ -1,0 +1,22 @@
+{
+  "description": "Example genomic variant record in the format used by Regeneron Genetics Center analysis pipelines",
+  "variant": {
+    "variantId": "rs699",
+    "chromosome": "1",
+    "position": 230845794,
+    "referenceAllele": "G",
+    "alternateAllele": "A",
+    "variantType": "SNP",
+    "gene": "AGT",
+    "hgvs": "NM_000029.4:c.803G>A",
+    "clinicalSignificance": "Likely Pathogenic",
+    "alleleFrequency": 0.4213,
+    "qualityScore": 99.0,
+    "depth": 45,
+    "genotype": "0/1",
+    "phenotypes": [
+      "Hypertension",
+      "Cardiovascular Disease"
+    ]
+  }
+}

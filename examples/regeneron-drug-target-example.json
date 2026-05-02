@@ -1,0 +1,19 @@
+{
+  "description": "Example drug target record representing a genetically validated target identified through RGC exome data",
+  "target": {
+    "targetId": "tgt-pcsk9",
+    "name": "PCSK9",
+    "targetType": "Protein",
+    "geneSymbol": "PCSK9",
+    "uniprotId": "Q8NBP7",
+    "biologicalFunction": "Proprotein convertase that cleaves LDL receptor on hepatocytes, reducing LDL clearance from blood",
+    "diseaseArea": [
+      "Cardiovascular Disease",
+      "Hypercholesterolemia",
+      "Atherosclerosis"
+    ],
+    "modality": "Antibody",
+    "geneticValidation": true,
+    "rgcEvidence": true
+  }
+}

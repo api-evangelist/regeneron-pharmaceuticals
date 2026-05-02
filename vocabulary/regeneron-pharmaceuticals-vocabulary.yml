@@ -1,0 +1,144 @@
+vocabulary:
+  name: Regeneron Pharmaceuticals Vocabulary
+  description: >-
+    Domain vocabulary for Regeneron Pharmaceuticals, a leading biotechnology
+    company specializing in large molecule medicines and the use of human
+    genetics to discover and validate drug targets. Covers genomics, drug
+    development, therapeutic areas, and the Regeneron Genetics Center open-source
+    bioinformatics toolset.
+  version: 1.0.0
+  created: '2026-05-02'
+  modified: '2026-05-02'
+  source: https://www.regeneron.com
+
+terms:
+  - term: Regeneron Genetics Center (RGC)
+    definition: >-
+      A wholly owned subsidiary of Regeneron that has sequenced over 3 million
+      human exomes and phenotyped them against electronic health record data to
+      discover and validate drug targets at scale. The RGC is one of the largest
+      human genetics sequencing programs in the world.
+    tags:
+      - Research Unit
+      - Genomics
+
+  - term: Exome Sequencing
+    definition: >-
+      The selective sequencing of all protein-coding regions of the genome
+      (the exome), which represents approximately 1-2% of the total genome
+      but contains most known disease-causing variants. The RGC uses whole
+      exome sequencing (WES) as its primary sequencing modality.
+    tags:
+      - Genomics
+      - Technology
+
+  - term: Genome-Wide Association Study (GWAS)
+    definition: >-
+      A statistical study of genetic variants across many individuals to identify
+      associations between specific genetic variants and disease traits or drug
+      responses. RGC uses regenie software for large-scale GWAS on its exome
+      cohort.
+    tags:
+      - Genomics
+      - Research Method
+
+  - term: regenie
+    definition: >-
+      An open-source C++ program developed by the Regeneron Genetics Center for
+      whole genome regression modelling of large GWAS. Supports quantitative and
+      binary traits, gene/region-based tests, and interaction tests. Available at
+      https://github.com/rgcgithub/regenie.
+    tags:
+      - Open Source
+      - Bioinformatics Tool
+
+  - term: CLAMMS
+    definition: >-
+      Copy number variant detection tool for whole-exome sequencing data developed
+      by the Regeneron Genetics Center. CLAMMS is scalable to large cohorts and
+      detects both common and rare CNVs. Available on GitHub under regeneron-mpds.
+    tags:
+      - Open Source
+      - Bioinformatics Tool
+
+  - term: TCRAI
+    definition: >-
+      T Cell Receptor Analysis and Integration tool developed by Regeneron for
+      multiplexed dextramer mapping and prediction of T cell receptor sequences
+      to antigen specificity. Available at github.com/regeneron-mpds/TCRAI.
+    tags:
+      - Open Source
+      - Immunology Tool
+
+  - term: Therapeutics
+    definition: >-
+      Regeneron's approved medicine portfolio including Dupixent (dupilumab) for
+      atopic dermatitis and asthma, Eylea (aflibercept) for wet AMD and diabetic
+      eye disease, Kevzara (sarilumab) for rheumatoid arthritis, Libtayo
+      (cemiplimab) for skin cancers, and Praluent (alirocumab) for high cholesterol.
+    tags:
+      - Product
+      - Medicine
+
+  - term: VelociGene
+    definition: >-
+      Regeneron's proprietary genetic engineering technology platform for creating
+      genetically modified mice and other organisms for drug target validation and
+      disease model generation.
+    tags:
+      - Technology Platform
+      - Research
+
+  - term: VelocImmune
+    definition: >-
+      Regeneron's proprietary mouse technology platform that produces fully human
+      antibodies by replacing mouse antibody genes with human equivalents, enabling
+      rapid generation of fully human therapeutic antibodies.
+    tags:
+      - Technology Platform
+      - Antibody
+
+  - term: Monoclonal Antibody
+    definition: >-
+      A type of biologic drug produced by identical immune cells and targeting a
+      specific antigen. Regeneron specializes in fully human monoclonal antibodies
+      generated through the VelocImmune platform.
+    tags:
+      - Drug Modality
+      - Biologic
+
+  - term: TriNetX Collaboration
+    definition: >-
+      Regeneron's strategic collaboration with TriNetX to link RGC genomic and
+      proteomic data with de-identified electronic health records of approximately
+      300 million patients for drug discovery and development research.
+    tags:
+      - Partnership
+      - Data
+
+  - term: Electronic Health Record (EHR) Linkage
+    definition: >-
+      The process of connecting genomic sequencing data with de-identified patient
+      health records to correlate genetic variants with clinical phenotypes,
+      diagnoses, and treatment outcomes at population scale.
+    tags:
+      - Research Method
+      - Data
+
+  - term: Copy Number Variant (CNV)
+    definition: >-
+      A structural genomic variant where segments of the genome are repeated or
+      deleted relative to the reference genome. CNVs range from kilobases to
+      megabases in size and can affect gene dosage and expression.
+    tags:
+      - Genomics
+      - Variant Type
+
+  - term: GWAS Summary Statistics
+    definition: >-
+      Published statistical outputs from genome-wide association studies including
+      per-variant effect sizes, standard errors, and p-values. RGC frequently
+      deposits summary statistics to public repositories to advance the field.
+    tags:
+      - Data
+      - Research Output

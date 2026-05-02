@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-evangelist.github.io/regeneron-pharmaceuticals/json-schema/regeneron-genomic-variant-schema.json",
+  "title": "Genomic Variant",
+  "description": "A genetic variant identified in genomic sequencing data as processed by Regeneron Genetics Center pipelines",
+  "type": "object",
+  "required": ["variantId", "chromosome", "position", "referenceAllele", "alternateAllele"],
+  "properties": {
+    "variantId": {
+      "type": "string",
+      "description": "Unique variant identifier (e.g., rsID or internal ID)"
+    },
+    "chromosome": {
+      "type": "string",
+      "description": "Chromosome designation (1-22, X, Y, MT)"
+    },
+    "position": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Genomic position on the chromosome (1-based)"
+    },
+    "referenceAllele": {
+      "type": "string",
+      "pattern": "^[ACGT]+$",
+      "description": "Reference genome allele"
+    },
+    "alternateAllele": {
+      "type": "string",
+      "pattern": "^[ACGT]+$",
+      "description": "Alternate (non-reference) allele"
+    },
+    "variantType": {
+      "type": "string",
+      "enum": ["SNP", "INDEL", "CNV", "SV", "INSERTION", "DELETION"],
+      "description": "Classification of the genetic variant"
+    },
+    "gene": {
+      "type": "string",
+      "description": "Gene symbol in which the variant is located"
+    },
+    "hgvs": {
+      "type": "string",
+      "description": "HGVS nomenclature representation of the variant"
+    },
+    "clinicalSignificance": {
+      "type": "string",
+      "enum": ["Pathogenic", "Likely Pathogenic", "Uncertain Significance", "Likely Benign", "Benign"],
+      "description": "ClinVar clinical significance classification"
+    },
+    "alleleFrequency": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Population allele frequency (0 to 1)"
+    },
+    "qualityScore": {
+      "type": "number",
+      "description": "Variant calling quality score"
+    },
+    "depth": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Read depth at the variant position"
+    },
+    "genotype": {
+      "type": "string",
+      "description": "Sample genotype (e.g., 0/1 for heterozygous, 1/1 for homozygous alternate)"
+    },
+    "phenotypes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Associated phenotype or disease terms (HPO or OMIM)"
+    }
+  },
+  "additionalProperties": false
+}

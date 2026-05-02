@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "bio": "http://purl.obolibrary.org/obo/",
+    "rgn": "https://api-evangelist.github.io/regeneron-pharmaceuticals/vocab#",
+    "id": "@id",
+    "type": "@type",
+    "Organization": "schema:Organization",
+    "MedicalOrganization": "schema:MedicalOrganization",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "Drug": "schema:Drug",
+    "activeIngredient": "schema:activeIngredient",
+    "clinicalPhase": "rgn:clinicalPhase",
+    "diseaseArea": "schema:relevantSpecialty",
+    "mechanismOfAction": "schema:mechanismOfAction",
+    "GenomicVariant": {
+      "@id": "rgn:GenomicVariant",
+      "@type": "schema:Thing"
+    },
+    "chromosome": "rgn:chromosome",
+    "position": "rgn:genomicPosition",
+    "referenceAllele": "rgn:referenceAllele",
+    "alternateAllele": "rgn:alternateAllele",
+    "variantType": "rgn:variantType",
+    "gene": "rgn:geneSymbol",
+    "hgvs": "rgn:hgvsNotation",
+    "clinicalSignificance": "rgn:clinicalSignificance",
+    "alleleFrequency": "rgn:alleleFrequency",
+    "DrugTarget": {
+      "@id": "rgn:DrugTarget",
+      "@type": "schema:Thing"
+    },
+    "uniprotId": "rgn:uniprotId",
+    "geneticValidation": "rgn:geneticValidation",
+    "modality": "rgn:therapeuticModality",
+    "GeneticsMedicalStudy": {
+      "@id": "schema:MedicalStudy"
+    },
+    "studyType": "schema:studyType",
+    "cohortSize": "rgn:cohortSize",
+    "phenotype": "rgn:phenotype"
+  }
+}
