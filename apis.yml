@@ -13,6 +13,8 @@ description: >-
   GitHub organizations at github.com/rgcgithub and github.com/regeneron-mpds.
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/regeneron-pharmaceuticals-domain-security.yml
   - type: Website
     url: https://www.regeneron.com
   - type: Research
